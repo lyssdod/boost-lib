@@ -48,6 +48,8 @@ function(get_boots_lib_b2_args)
             list(APPEND b2Args toolset=msvc-12.0)
         elseif(MSVC14)
             list(APPEND b2Args toolset=msvc-14.0)
+        elseif(MSVC15)
+            list(APPEND b2Args toolset=msvc-15.0)
         endif()
         
         list(APPEND b2Args
